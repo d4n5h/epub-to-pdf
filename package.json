@@ -1,0 +1,47 @@
+{
+  "name": "epub-to-pdf",
+  "version": "1.0.0",
+  "description": "A library to convert EPUB files to PDF while preserving styling using puppeteer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "epub",
+    "pdf",
+    "converter",
+    "ebook"
+  ],
+  "type": "module",
+  "author": "Daniel S.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d4n5h/epub-to-pdf.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "cheerio": "^1.0.0",
+    "fs-extra": "^11.3.0",
+    "path": "^0.12.7",
+    "puppeteer": "^24.4.0",
+    "tmp-promise": "^3.0.3",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.3",
+    "@types/cheerio": "^0.22.35",
+    "@types/fs-extra": "^11.0.3",
+    "@types/jest": "^29.5.7",
+    "@types/node": "^20.8.10",
+    "@types/xml2js": "^0.4.14",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}
